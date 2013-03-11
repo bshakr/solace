@@ -1,33 +1,18 @@
 //
-//  BSTabBarItemViewController.m
+//  BSAlertsViewController.m
 //  solace
 //
 //  Created by Bassem on 11/03/2013.
 //  Copyright (c) 2013 Bassem Shaker. All rights reserved.
 //
 
-#import "BSTabBarItemViewController.h"
+#import "BSAlertsViewController.h"
 
-@interface BSTabBarItemViewController ()
+@interface BSAlertsViewController ()
 
 @end
 
-@implementation BSTabBarItemViewController
-
-
-@synthesize tabTitle;
-
-- (id)initWithTitle:(NSString *)title {
-    
-    self = [super initWithNibName:@"BSTabBarItemViewController" bundle:nil];
-    if (self) {
-        // Custom initialization
-        
-        self.title = title;
-    }
-    return self;
-}
-
+@implementation BSAlertsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,9 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-    self.tabTitle.text = self.title;
-
 }
 
 - (void)didReceiveMemoryWarning

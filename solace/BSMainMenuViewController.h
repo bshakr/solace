@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "BSTabBarItemViewController.h"
 
+#import "BSAlertsViewController.h"
+#import "BSSettingsViewController.h"
+#import "BSGuestViewController.h"
+#import "BSLogViewController.h"
+#import "BSDoorViewController.h"
+
+
 @interface BSMainMenuViewController : UIViewController <UITabBarControllerDelegate>
 {
     UITabBarController *_tabBarViewController;

@@ -58,41 +58,40 @@
 
 
     }
-
-    BSTabBarItemViewController *tabItem1 = [[BSTabBarItemViewController alloc] initWithTitle:@"Tab 1"];
-    BSTabBarItemViewController *tabItem2 = [[BSTabBarItemViewController alloc] initWithTitle:@"Tab 2"];
-    BSTabBarItemViewController *tabItem3 = [[BSTabBarItemViewController alloc] initWithTitle:@"Tab 3"];
-    BSTabBarItemViewController *tabItem4 = [[BSTabBarItemViewController alloc] initWithTitle:@"Tab 4"];
+    BSDoorViewController *doorController = [[BSDoorViewController alloc] init];
+    BSLogViewController *logController = [[BSLogViewController alloc] init];
+    BSGuestViewController *guestController = [[BSGuestViewController alloc] init];
+    BSAlertsViewController *alertsController = [[BSAlertsViewController alloc] init];
+    BSSettingsViewController *settingsController = [[BSSettingsViewController alloc] init];
     
-    UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:tabItem1];
-    UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:tabItem2];
-    UINavigationController *navController3 = [[UINavigationController alloc] initWithRootViewController:tabItem3];
-    UINavigationController *navController4 = [[UINavigationController alloc] initWithRootViewController:tabItem4];
     
-    tabItem1.view.backgroundColor = [UIColor yellowColor];
+    
+    UINavigationController *navController1 = [[UINavigationController alloc] initWithRootViewController:doorController];
+    UINavigationController *navController2 = [[UINavigationController alloc] initWithRootViewController:logController];
+    UINavigationController *navController3 = [[UINavigationController alloc] initWithRootViewController:guestController];
+    UINavigationController *navController4 = [[UINavigationController alloc] initWithRootViewController:alertsController];
+    UINavigationController *navController5 = [[UINavigationController alloc] initWithRootViewController:settingsController];
     _tabBarViewController.delegate = self;
     _tabBarViewController.selectedIndex = 0;
+    [navController1 setTitle:@"Doors"];
+    [navController1.topViewController setTitle:@"Doors"];
+    
+    [navController2 setTitle:@"Log"];
+    [navController2.topViewController setTitle:@"Log"];
+    
+    [navController3 setTitle:@"Guests"];
+    [navController3.topViewController setTitle:@"Guests"];
+    
+    [navController4 setTitle:@"Alerts"];
+    [navController4.topViewController setTitle:@"Alerts"];
+    
+    [navController5 setTitle:@"Settings"];
+    [navController5.topViewController setTitle:@"Settings"];
 
-    _tabBarViewController.viewControllers = [NSArray arrayWithObjects:navController1, navController2, navController3, navController4, nil];
+    _tabBarViewController.viewControllers = [NSArray arrayWithObjects:navController1, navController2, navController3, navController4, navController5, nil];
     [self.view addSubview:_tabBarViewController.view];
 
 
-}
-
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    
-    if (tabBarController.selectedIndex == 0) {
-        [((UINavigationController *)viewController) visibleViewController].view.backgroundColor = [UIColor yellowColor];
-    }
-    else if (tabBarController.selectedIndex == 1) {
-        [((UINavigationController *)viewController) visibleViewController].view.backgroundColor = [UIColor redColor];
-    }
-    else if (tabBarController.selectedIndex == 2) {
-        [((UINavigationController *)viewController) visibleViewController].view.backgroundColor = [UIColor blueColor];
-    }
-    else if (tabBarController.selectedIndex == 3) {
-        [((UINavigationController *)viewController) visibleViewController].view.backgroundColor = [UIColor greenColor];
-    }
 }
 
 @end

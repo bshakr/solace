@@ -20,11 +20,19 @@
 		7F1F627716EE04B700018974 /* BSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627516EE04B700018974 /* BSLoginViewController.xib */; };
 		7F1F628016EE1B9B00018974 /* BSMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */; };
 		7F1F628116EE1B9B00018974 /* BSMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */; };
-		7F1F628516EE1CD600018974 /* BSTabBarItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F628316EE1CD500018974 /* BSTabBarItemViewController.m */; };
-		7F1F628616EE1CD600018974 /* BSTabBarItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628416EE1CD600018974 /* BSTabBarItemViewController.xib */; };
 		7F1F628A16EE292E00018974 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628716EE292E00018974 /* Icon.png */; };
 		7F1F628B16EE292E00018974 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628816EE292E00018974 /* Icon@2x.png */; };
 		7F1F628C16EE292E00018974 /* Solace 512.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628916EE292E00018974 /* Solace 512.png */; };
+		7F1F62C616EE98A700018974 /* BSLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62C416EE98A700018974 /* BSLogViewController.m */; };
+		7F1F62C716EE98A700018974 /* BSLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62C516EE98A700018974 /* BSLogViewController.xib */; };
+		7F1F62CB16EE98BA00018974 /* BSDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62C916EE98BA00018974 /* BSDoorViewController.m */; };
+		7F1F62CC16EE98BA00018974 /* BSDoorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62CA16EE98BA00018974 /* BSDoorViewController.xib */; };
+		7F1F62D116EE990600018974 /* BSGuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62CF16EE990600018974 /* BSGuestViewController.m */; };
+		7F1F62D216EE990600018974 /* BSGuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62D016EE990600018974 /* BSGuestViewController.xib */; };
+		7F1F62D716EE992000018974 /* BSAlertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62D516EE992000018974 /* BSAlertsViewController.m */; };
+		7F1F62D816EE992000018974 /* BSAlertsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62D616EE992000018974 /* BSAlertsViewController.xib */; };
+		7F1F62DD16EE993400018974 /* BSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F62DB16EE993400018974 /* BSSettingsViewController.m */; };
+		7F1F62DE16EE993400018974 /* BSSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62DC16EE993400018974 /* BSSettingsViewController.xib */; };
 		90555E9982E247CA9BBD363E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B49A9B84AE490D93DEFAAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,12 +56,24 @@
 		7F1F627D16EE1B9B00018974 /* BSMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMainMenuViewController.h; sourceTree = "<group>"; };
 		7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMainMenuViewController.m; sourceTree = "<group>"; };
 		7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSMainMenuViewController.xib; sourceTree = "<group>"; };
-		7F1F628216EE1CD500018974 /* BSTabBarItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBarItemViewController.h; sourceTree = "<group>"; };
-		7F1F628316EE1CD500018974 /* BSTabBarItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBarItemViewController.m; sourceTree = "<group>"; };
-		7F1F628416EE1CD600018974 /* BSTabBarItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSTabBarItemViewController.xib; sourceTree = "<group>"; };
 		7F1F628716EE292E00018974 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7F1F628816EE292E00018974 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		7F1F628916EE292E00018974 /* Solace 512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Solace 512.png"; sourceTree = "<group>"; };
+		7F1F62C316EE98A700018974 /* BSLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLogViewController.h; sourceTree = "<group>"; };
+		7F1F62C416EE98A700018974 /* BSLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLogViewController.m; sourceTree = "<group>"; };
+		7F1F62C516EE98A700018974 /* BSLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSLogViewController.xib; sourceTree = "<group>"; };
+		7F1F62C816EE98BA00018974 /* BSDoorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDoorViewController.h; sourceTree = "<group>"; };
+		7F1F62C916EE98BA00018974 /* BSDoorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDoorViewController.m; sourceTree = "<group>"; };
+		7F1F62CA16EE98BA00018974 /* BSDoorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSDoorViewController.xib; sourceTree = "<group>"; };
+		7F1F62CE16EE990600018974 /* BSGuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGuestViewController.h; sourceTree = "<group>"; };
+		7F1F62CF16EE990600018974 /* BSGuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGuestViewController.m; sourceTree = "<group>"; };
+		7F1F62D016EE990600018974 /* BSGuestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSGuestViewController.xib; sourceTree = "<group>"; };
+		7F1F62D416EE992000018974 /* BSAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAlertsViewController.h; sourceTree = "<group>"; };
+		7F1F62D516EE992000018974 /* BSAlertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAlertsViewController.m; sourceTree = "<group>"; };
+		7F1F62D616EE992000018974 /* BSAlertsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSAlertsViewController.xib; sourceTree = "<group>"; };
+		7F1F62DA16EE993400018974 /* BSSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSettingsViewController.h; sourceTree = "<group>"; };
+		7F1F62DB16EE993400018974 /* BSSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSettingsViewController.m; sourceTree = "<group>"; };
+		7F1F62DC16EE993400018974 /* BSSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSSettingsViewController.xib; sourceTree = "<group>"; };
 		91FFF5CF89634B7590F908DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		F1B49A9B84AE490D93DEFAAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,18 +125,18 @@
 		7F1F626016EE04B700018974 /* solace */ = {
 			isa = PBXGroup;
 			children = (
+				7F1F62D916EE992700018974 /* Settings */,
+				7F1F62D316EE991000018974 /* Alerts */,
+				7F1F62CD16EE98FA00018974 /* Guests */,
+				7F1F62C216EE989200018974 /* Log */,
+				7F1F62BE16EE985A00018974 /* Doors */,
 				7F1F626916EE04B700018974 /* BSAppDelegate.h */,
 				7F1F626A16EE04B700018974 /* BSAppDelegate.m */,
 				7F1F627216EE04B700018974 /* BSLoginViewController.h */,
 				7F1F627316EE04B700018974 /* BSLoginViewController.m */,
 				7F1F627516EE04B700018974 /* BSLoginViewController.xib */,
+				7F1F62BC16EE943300018974 /* Main Menu */,
 				7F1F626116EE04B700018974 /* Supporting Files */,
-				7F1F627D16EE1B9B00018974 /* BSMainMenuViewController.h */,
-				7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */,
-				7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */,
-				7F1F628216EE1CD500018974 /* BSTabBarItemViewController.h */,
-				7F1F628316EE1CD500018974 /* BSTabBarItemViewController.m */,
-				7F1F628416EE1CD600018974 /* BSTabBarItemViewController.xib */,
 			);
 			path = solace;
 			sourceTree = "<group>";
@@ -136,6 +156,66 @@
 				7F1F627016EE04B700018974 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F1F62BC16EE943300018974 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F627D16EE1B9B00018974 /* BSMainMenuViewController.h */,
+				7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */,
+				7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		7F1F62BE16EE985A00018974 /* Doors */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F62C816EE98BA00018974 /* BSDoorViewController.h */,
+				7F1F62C916EE98BA00018974 /* BSDoorViewController.m */,
+				7F1F62CA16EE98BA00018974 /* BSDoorViewController.xib */,
+			);
+			name = Doors;
+			sourceTree = "<group>";
+		};
+		7F1F62C216EE989200018974 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F62C316EE98A700018974 /* BSLogViewController.h */,
+				7F1F62C416EE98A700018974 /* BSLogViewController.m */,
+				7F1F62C516EE98A700018974 /* BSLogViewController.xib */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
+		7F1F62CD16EE98FA00018974 /* Guests */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F62CE16EE990600018974 /* BSGuestViewController.h */,
+				7F1F62CF16EE990600018974 /* BSGuestViewController.m */,
+				7F1F62D016EE990600018974 /* BSGuestViewController.xib */,
+			);
+			name = Guests;
+			sourceTree = "<group>";
+		};
+		7F1F62D316EE991000018974 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F62D416EE992000018974 /* BSAlertsViewController.h */,
+				7F1F62D516EE992000018974 /* BSAlertsViewController.m */,
+				7F1F62D616EE992000018974 /* BSAlertsViewController.xib */,
+			);
+			name = Alerts;
+			sourceTree = "<group>";
+		};
+		7F1F62D916EE992700018974 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F62DA16EE993400018974 /* BSSettingsViewController.h */,
+				7F1F62DB16EE993400018974 /* BSSettingsViewController.m */,
+				7F1F62DC16EE993400018974 /* BSSettingsViewController.xib */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,10 +277,14 @@
 				7F1F627116EE04B700018974 /* Default-568h@2x.png in Resources */,
 				7F1F627716EE04B700018974 /* BSLoginViewController.xib in Resources */,
 				7F1F628116EE1B9B00018974 /* BSMainMenuViewController.xib in Resources */,
-				7F1F628616EE1CD600018974 /* BSTabBarItemViewController.xib in Resources */,
 				7F1F628A16EE292E00018974 /* Icon.png in Resources */,
 				7F1F628B16EE292E00018974 /* Icon@2x.png in Resources */,
 				7F1F628C16EE292E00018974 /* Solace 512.png in Resources */,
+				7F1F62C716EE98A700018974 /* BSLogViewController.xib in Resources */,
+				7F1F62CC16EE98BA00018974 /* BSDoorViewController.xib in Resources */,
+				7F1F62D216EE990600018974 /* BSGuestViewController.xib in Resources */,
+				7F1F62D816EE992000018974 /* BSAlertsViewController.xib in Resources */,
+				7F1F62DE16EE993400018974 /* BSSettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +316,11 @@
 				7F1F626B16EE04B700018974 /* BSAppDelegate.m in Sources */,
 				7F1F627416EE04B700018974 /* BSLoginViewController.m in Sources */,
 				7F1F628016EE1B9B00018974 /* BSMainMenuViewController.m in Sources */,
-				7F1F628516EE1CD600018974 /* BSTabBarItemViewController.m in Sources */,
+				7F1F62C616EE98A700018974 /* BSLogViewController.m in Sources */,
+				7F1F62CB16EE98BA00018974 /* BSDoorViewController.m in Sources */,
+				7F1F62D116EE990600018974 /* BSGuestViewController.m in Sources */,
+				7F1F62D716EE992000018974 /* BSAlertsViewController.m in Sources */,
+				7F1F62DD16EE993400018974 /* BSSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
