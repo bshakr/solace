@@ -20,6 +20,7 @@
     [super viewDidLoad];
     self.username.text = @"";
     self.password.text = @"";
+    self.password.secureTextEntry = YES;
     [self.username becomeFirstResponder];
 	// Do any additional setup after loading the view, typically from a nib.
 }
