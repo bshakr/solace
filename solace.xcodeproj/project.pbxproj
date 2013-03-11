@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F1F625B16EE04B700018974 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F625A16EE04B700018974 /* UIKit.framework */; };
+		7F1F625D16EE04B700018974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F625C16EE04B700018974 /* Foundation.framework */; };
+		7F1F625F16EE04B700018974 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F625E16EE04B700018974 /* CoreGraphics.framework */; };
+		7F1F626516EE04B700018974 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F626316EE04B700018974 /* InfoPlist.strings */; };
+		7F1F626716EE04B700018974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F626616EE04B700018974 /* main.m */; };
+		7F1F626B16EE04B700018974 /* BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F626A16EE04B700018974 /* BSAppDelegate.m */; };
+		7F1F626D16EE04B700018974 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F626C16EE04B700018974 /* Default.png */; };
+		7F1F626F16EE04B700018974 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F626E16EE04B700018974 /* Default@2x.png */; };
+		7F1F627116EE04B700018974 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627016EE04B700018974 /* Default-568h@2x.png */; };
+		7F1F627416EE04B700018974 /* BSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F627316EE04B700018974 /* BSViewController.m */; };
+		7F1F627716EE04B700018974 /* BSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627516EE04B700018974 /* BSViewController.xib */; };
+		7F1F628016EE1B9B00018974 /* BSMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */; };
+		7F1F628116EE1B9B00018974 /* BSMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */; };
+		7F1F628516EE1CD600018974 /* BSTabBarItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F628316EE1CD500018974 /* BSTabBarItemViewController.m */; };
+		7F1F628616EE1CD600018974 /* BSTabBarItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628416EE1CD600018974 /* BSTabBarItemViewController.xib */; };
+		7F1F628A16EE292E00018974 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628716EE292E00018974 /* Icon.png */; };
+		7F1F628B16EE292E00018974 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628816EE292E00018974 /* Icon@2x.png */; };
+		7F1F628C16EE292E00018974 /* Solace 512.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F628916EE292E00018974 /* Solace 512.png */; };
+		90555E9982E247CA9BBD363E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B49A9B84AE490D93DEFAAD /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F1F625716EE04B700018974 /* solace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F1F625A16EE04B700018974 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F1F625C16EE04B700018974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F1F625E16EE04B700018974 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F1F626216EE04B700018974 /* solace-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "solace-Info.plist"; sourceTree = "<group>"; };
+		7F1F626416EE04B700018974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F1F626616EE04B700018974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F1F626816EE04B700018974 /* solace-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "solace-Prefix.pch"; sourceTree = "<group>"; };
+		7F1F626916EE04B700018974 /* BSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
+		7F1F626A16EE04B700018974 /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSAppDelegate.m; sourceTree = "<group>"; };
+		7F1F626C16EE04B700018974 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7F1F626E16EE04B700018974 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7F1F627016EE04B700018974 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7F1F627216EE04B700018974 /* BSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSViewController.h; sourceTree = "<group>"; };
+		7F1F627316EE04B700018974 /* BSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSViewController.m; sourceTree = "<group>"; };
+		7F1F627616EE04B700018974 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BSViewController.xib; sourceTree = "<group>"; };
+		7F1F627D16EE1B9B00018974 /* BSMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMainMenuViewController.h; sourceTree = "<group>"; };
+		7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMainMenuViewController.m; sourceTree = "<group>"; };
+		7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSMainMenuViewController.xib; sourceTree = "<group>"; };
+		7F1F628216EE1CD500018974 /* BSTabBarItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBarItemViewController.h; sourceTree = "<group>"; };
+		7F1F628316EE1CD500018974 /* BSTabBarItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBarItemViewController.m; sourceTree = "<group>"; };
+		7F1F628416EE1CD600018974 /* BSTabBarItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSTabBarItemViewController.xib; sourceTree = "<group>"; };
+		7F1F628716EE292E00018974 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7F1F628816EE292E00018974 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		7F1F628916EE292E00018974 /* Solace 512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Solace 512.png"; sourceTree = "<group>"; };
+		91FFF5CF89634B7590F908DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		F1B49A9B84AE490D93DEFAAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F1F625416EE04B700018974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1F625B16EE04B700018974 /* UIKit.framework in Frameworks */,
+				7F1F625D16EE04B700018974 /* Foundation.framework in Frameworks */,
+				7F1F625F16EE04B700018974 /* CoreGraphics.framework in Frameworks */,
+				90555E9982E247CA9BBD363E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F1F624E16EE04B700018974 = {
+			isa = PBXGroup;
+			children = (
+				7F1F626016EE04B700018974 /* solace */,
+				7F1F625916EE04B700018974 /* Frameworks */,
+				7F1F625816EE04B700018974 /* Products */,
+				91FFF5CF89634B7590F908DC /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		7F1F625816EE04B700018974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F625716EE04B700018974 /* solace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F1F625916EE04B700018974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F625A16EE04B700018974 /* UIKit.framework */,
+				7F1F625C16EE04B700018974 /* Foundation.framework */,
+				7F1F625E16EE04B700018974 /* CoreGraphics.framework */,
+				F1B49A9B84AE490D93DEFAAD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F1F626016EE04B700018974 /* solace */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F626916EE04B700018974 /* BSAppDelegate.h */,
+				7F1F626A16EE04B700018974 /* BSAppDelegate.m */,
+				7F1F627216EE04B700018974 /* BSViewController.h */,
+				7F1F627316EE04B700018974 /* BSViewController.m */,
+				7F1F627516EE04B700018974 /* BSViewController.xib */,
+				7F1F626116EE04B700018974 /* Supporting Files */,
+				7F1F627D16EE1B9B00018974 /* BSMainMenuViewController.h */,
+				7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */,
+				7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */,
+				7F1F628216EE1CD500018974 /* BSTabBarItemViewController.h */,
+				7F1F628316EE1CD500018974 /* BSTabBarItemViewController.m */,
+				7F1F628416EE1CD600018974 /* BSTabBarItemViewController.xib */,
+			);
+			path = solace;
+			sourceTree = "<group>";
+		};
+		7F1F626116EE04B700018974 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F626216EE04B700018974 /* solace-Info.plist */,
+				7F1F626316EE04B700018974 /* InfoPlist.strings */,
+				7F1F626616EE04B700018974 /* main.m */,
+				7F1F628716EE292E00018974 /* Icon.png */,
+				7F1F628816EE292E00018974 /* Icon@2x.png */,
+				7F1F628916EE292E00018974 /* Solace 512.png */,
+				7F1F626816EE04B700018974 /* solace-Prefix.pch */,
+				7F1F626C16EE04B700018974 /* Default.png */,
+				7F1F626E16EE04B700018974 /* Default@2x.png */,
+				7F1F627016EE04B700018974 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F1F625616EE04B700018974 /* solace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F1F627A16EE04B700018974 /* Build configuration list for PBXNativeTarget "solace" */;
+			buildPhases = (
+				7F1F625316EE04B700018974 /* Sources */,
+				7F1F625416EE04B700018974 /* Frameworks */,
+				7F1F625516EE04B700018974 /* Resources */,
+				A1AB81DBCCE04EB9B768A934 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = solace;
+			productName = solace;
+			productReference = 7F1F625716EE04B700018974 /* solace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F1F624F16EE04B700018974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bassem Shaker";
+			};
+			buildConfigurationList = 7F1F625216EE04B700018974 /* Build configuration list for PBXProject "solace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F1F624E16EE04B700018974;
+			productRefGroup = 7F1F625816EE04B700018974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F1F625616EE04B700018974 /* solace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F1F625516EE04B700018974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1F626516EE04B700018974 /* InfoPlist.strings in Resources */,
+				7F1F626D16EE04B700018974 /* Default.png in Resources */,
+				7F1F626F16EE04B700018974 /* Default@2x.png in Resources */,
+				7F1F627116EE04B700018974 /* Default-568h@2x.png in Resources */,
+				7F1F627716EE04B700018974 /* BSViewController.xib in Resources */,
+				7F1F628116EE1B9B00018974 /* BSMainMenuViewController.xib in Resources */,
+				7F1F628616EE1CD600018974 /* BSTabBarItemViewController.xib in Resources */,
+				7F1F628A16EE292E00018974 /* Icon.png in Resources */,
+				7F1F628B16EE292E00018974 /* Icon@2x.png in Resources */,
+				7F1F628C16EE292E00018974 /* Solace 512.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1AB81DBCCE04EB9B768A934 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F1F625316EE04B700018974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1F626716EE04B700018974 /* main.m in Sources */,
+				7F1F626B16EE04B700018974 /* BSAppDelegate.m in Sources */,
+				7F1F627416EE04B700018974 /* BSViewController.m in Sources */,
+				7F1F628016EE1B9B00018974 /* BSMainMenuViewController.m in Sources */,
+				7F1F628516EE1CD600018974 /* BSTabBarItemViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F1F626316EE04B700018974 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F1F626416EE04B700018974 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F1F627516EE04B700018974 /* BSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F1F627616EE04B700018974 /* en */,
+			);
+			name = BSViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F1F627816EE04B700018974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F1F627916EE04B700018974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F1F627B16EE04B700018974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91FFF5CF89634B7590F908DC /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "solace/solace-Prefix.pch";
+				INFOPLIST_FILE = "solace/solace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F1F627C16EE04B700018974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91FFF5CF89634B7590F908DC /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "solace/solace-Prefix.pch";
+				INFOPLIST_FILE = "solace/solace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F1F625216EE04B700018974 /* Build configuration list for PBXProject "solace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1F627816EE04B700018974 /* Debug */,
+				7F1F627916EE04B700018974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F1F627A16EE04B700018974 /* Build configuration list for PBXNativeTarget "solace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1F627B16EE04B700018974 /* Debug */,
+				7F1F627C16EE04B700018974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F1F624F16EE04B700018974 /* Project object */;
+}
