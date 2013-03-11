@@ -8,7 +8,7 @@
 
 #import "BSAppDelegate.h"
 
-#import "BSViewController.h"
+#import "BSLoginViewController.h"
 
 @implementation BSAppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[BSViewController alloc] initWithNibName:@"BSViewController" bundle:nil];
+    self.viewController = [[BSLoginViewController alloc] initWithNibName:@"BSViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

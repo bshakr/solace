@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class BSViewController;
+@class BSLoginViewController;
 
 @interface BSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) BSViewController *viewController;
+@property (strong, nonatomic) BSLoginViewController *viewController;
 
 @end

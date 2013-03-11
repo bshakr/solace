@@ -16,8 +16,8 @@
 		7F1F626D16EE04B700018974 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F626C16EE04B700018974 /* Default.png */; };
 		7F1F626F16EE04B700018974 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F626E16EE04B700018974 /* Default@2x.png */; };
 		7F1F627116EE04B700018974 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627016EE04B700018974 /* Default-568h@2x.png */; };
-		7F1F627416EE04B700018974 /* BSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F627316EE04B700018974 /* BSViewController.m */; };
-		7F1F627716EE04B700018974 /* BSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627516EE04B700018974 /* BSViewController.xib */; };
+		7F1F627416EE04B700018974 /* BSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F627316EE04B700018974 /* BSLoginViewController.m */; };
+		7F1F627716EE04B700018974 /* BSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627516EE04B700018974 /* BSLoginViewController.xib */; };
 		7F1F628016EE1B9B00018974 /* BSMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */; };
 		7F1F628116EE1B9B00018974 /* BSMainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */; };
 		7F1F628516EE1CD600018974 /* BSTabBarItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F628316EE1CD500018974 /* BSTabBarItemViewController.m */; };
@@ -42,9 +42,9 @@
 		7F1F626C16EE04B700018974 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7F1F626E16EE04B700018974 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7F1F627016EE04B700018974 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7F1F627216EE04B700018974 /* BSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSViewController.h; sourceTree = "<group>"; };
-		7F1F627316EE04B700018974 /* BSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSViewController.m; sourceTree = "<group>"; };
-		7F1F627616EE04B700018974 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BSViewController.xib; sourceTree = "<group>"; };
+		7F1F627216EE04B700018974 /* BSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSLoginViewController.h; sourceTree = "<group>"; };
+		7F1F627316EE04B700018974 /* BSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSLoginViewController.m; sourceTree = "<group>"; };
+		7F1F627616EE04B700018974 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BSLoginViewController.xib; sourceTree = "<group>"; };
 		7F1F627D16EE1B9B00018974 /* BSMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSMainMenuViewController.h; sourceTree = "<group>"; };
 		7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSMainMenuViewController.m; sourceTree = "<group>"; };
 		7F1F627F16EE1B9B00018974 /* BSMainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSMainMenuViewController.xib; sourceTree = "<group>"; };
@@ -107,9 +107,9 @@
 			children = (
 				7F1F626916EE04B700018974 /* BSAppDelegate.h */,
 				7F1F626A16EE04B700018974 /* BSAppDelegate.m */,
-				7F1F627216EE04B700018974 /* BSViewController.h */,
-				7F1F627316EE04B700018974 /* BSViewController.m */,
-				7F1F627516EE04B700018974 /* BSViewController.xib */,
+				7F1F627216EE04B700018974 /* BSLoginViewController.h */,
+				7F1F627316EE04B700018974 /* BSLoginViewController.m */,
+				7F1F627516EE04B700018974 /* BSLoginViewController.xib */,
 				7F1F626116EE04B700018974 /* Supporting Files */,
 				7F1F627D16EE1B9B00018974 /* BSMainMenuViewController.h */,
 				7F1F627E16EE1B9B00018974 /* BSMainMenuViewController.m */,
@@ -195,7 +195,7 @@
 				7F1F626D16EE04B700018974 /* Default.png in Resources */,
 				7F1F626F16EE04B700018974 /* Default@2x.png in Resources */,
 				7F1F627116EE04B700018974 /* Default-568h@2x.png in Resources */,
-				7F1F627716EE04B700018974 /* BSViewController.xib in Resources */,
+				7F1F627716EE04B700018974 /* BSLoginViewController.xib in Resources */,
 				7F1F628116EE1B9B00018974 /* BSMainMenuViewController.xib in Resources */,
 				7F1F628616EE1CD600018974 /* BSTabBarItemViewController.xib in Resources */,
 				7F1F628A16EE292E00018974 /* Icon.png in Resources */,
@@ -230,7 +230,7 @@
 			files = (
 				7F1F626716EE04B700018974 /* main.m in Sources */,
 				7F1F626B16EE04B700018974 /* BSAppDelegate.m in Sources */,
-				7F1F627416EE04B700018974 /* BSViewController.m in Sources */,
+				7F1F627416EE04B700018974 /* BSLoginViewController.m in Sources */,
 				7F1F628016EE1B9B00018974 /* BSMainMenuViewController.m in Sources */,
 				7F1F628516EE1CD600018974 /* BSTabBarItemViewController.m in Sources */,
 			);
@@ -247,12 +247,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7F1F627516EE04B700018974 /* BSViewController.xib */ = {
+		7F1F627516EE04B700018974 /* BSLoginViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7F1F627616EE04B700018974 /* en */,
 			);
-			name = BSViewController.xib;
+			name = BSLoginViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
