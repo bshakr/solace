@@ -8,7 +8,7 @@
 
 #import "BSLoginViewController.h"
 #import "SVProgressHUD.h"
-
+#import "BSAppDelegate.h"
 @interface BSLoginViewController ()
 
 @end
@@ -44,7 +44,11 @@
         [SVProgressHUD dismiss];
         BSMainMenuViewController *menuViewController = [[BSMainMenuViewController alloc] init];
         [self presentViewController:menuViewController animated:YES completion:nil];
-        
+        //BSAppDelegate *delegate = (BSAppDelegate *)[[UIApplication sharedApplication] delegate];
+        //delegate.window.rootViewController = delegate.menuViewController;
+
+        //self.window.rootViewController = self.loginViewController;
+
     }
     
 }

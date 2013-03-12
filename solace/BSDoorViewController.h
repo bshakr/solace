@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@interface BSDoorViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
-@interface BSDoorViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

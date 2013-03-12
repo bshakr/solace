@@ -14,11 +14,11 @@
 #import "BSDoorViewController.h"
 
 
-@interface BSMainMenuViewController : UIViewController <UITabBarControllerDelegate>
-{
-    UITabBarController *_tabBarViewController;
-}
-@property (strong, nonatomic) UITabBarController *tabBarViewController;
+@interface BSMainMenuViewController : UIViewController <UITabBarControllerDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) NSArray *viewControllers;
+@property (strong, nonatomic) UITabBarController *tabBarController;
+
 
 - (void)initializeTabBar;
 

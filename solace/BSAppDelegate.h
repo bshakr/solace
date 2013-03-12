@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSLoginViewController.h"
 
 @class BSLoginViewController;
 
-@interface BSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface BSAppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) BSLoginViewController *viewController;
+@property (strong, nonatomic) BSLoginViewController *loginViewController;
+//@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end
