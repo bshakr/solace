@@ -26,14 +26,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self refresh];
     if(!self.detailViewController)
     {
         self.detailViewController = [[BSLogDetailViewController alloc] initWithNibName:@"BSLogDetailViewController" bundle:[NSBundle mainBundle]];
     }
+    self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView delegate:self];
 
     // Do any additional setup after loading the view from its nib.
 }
+-(void) refresh
+{
+    [self.pullToRefreshView startLoading];
 
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_after(popTime, backgroundQueue, ^(void){
+        //[self insertNewObject:nil];
+        [self.pullToRefreshView finishLoading];
+
+    });
+
+}
+- (void)pullToRefreshViewDidStartLoading:(SSPullToRefreshView *)view {
+    [self refresh];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

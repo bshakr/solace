@@ -2,16 +2,19 @@
 PODS:
 - AFNetworking (1.1.0)
 - SSKeychain (0.2.1)
+- SSPullToRefresh (1.1.1)
 - SVProgressHUD (0.9)
 
 DEPENDENCIES:
 - AFNetworking
 - SSKeychain
+- SSPullToRefresh
 - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
   SSKeychain: ffa1a79eb716d9ed1ca184fb0cf218087ca28486
+  SSPullToRefresh: a0ff1db3adb47b8ad60c2e71ed4d60f4199224b1
   SVProgressHUD: 98935fbafaf0031df4a9cafca3c66eaf3da06967
 
 COCOAPODS: 0.16.1

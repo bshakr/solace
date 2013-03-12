@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SSPullToRefresh.h"
 #import "BSLogDetailViewController.h"
-@interface BSLogViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface BSLogViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, SSPullToRefreshViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet BSLogDetailViewController *detailViewController;
+@property (nonatomic, strong) SSPullToRefreshView *pullToRefreshView;
 
 @end
