@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSLogDetailViewController.h"
+@interface BSLogViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
-@interface BSLogViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet BSLogDetailViewController *detailViewController;
 
 @end

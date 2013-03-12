@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BSGuestViewController : UIViewController
+@interface BSGuestViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

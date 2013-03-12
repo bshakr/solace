@@ -43,6 +43,12 @@
 		7F1F62F516EEB19000018974 /* icon-settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62F316EEB19000018974 /* icon-settings@2x.png */; };
 		7F1F62F816EEB1EF00018974 /* icon-highlighted-log@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62F616EEB1EF00018974 /* icon-highlighted-log@2x.png */; };
 		7F1F62F916EEB1EF00018974 /* icon-log@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F62F716EEB1EF00018974 /* icon-log@2x.png */; };
+		7F1F630F16EFB81E00018974 /* log-access-denied.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630D16EFB81D00018974 /* log-access-denied.png */; };
+		7F1F631016EFB81E00018974 /* log-access-denied@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F630E16EFB81D00018974 /* log-access-denied@2x.png */; };
+		7F1F631316EFBF7A00018974 /* log-access-granted.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F631116EFBF7A00018974 /* log-access-granted.png */; };
+		7F1F631416EFBF7A00018974 /* log-access-granted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F631216EFBF7A00018974 /* log-access-granted@2x.png */; };
+		7F1F631816EFC3E200018974 /* BSLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F631616EFC3E200018974 /* BSLogDetailViewController.m */; };
+		7F1F631916EFC3E200018974 /* BSLogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F631716EFC3E200018974 /* BSLogDetailViewController.xib */; };
 		90555E9982E247CA9BBD363E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B49A9B84AE490D93DEFAAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +100,13 @@
 		7F1F62F316EEB19000018974 /* icon-settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-settings@2x.png"; sourceTree = "<group>"; };
 		7F1F62F616EEB1EF00018974 /* icon-highlighted-log@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-highlighted-log@2x.png"; sourceTree = "<group>"; };
 		7F1F62F716EEB1EF00018974 /* icon-log@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-log@2x.png"; sourceTree = "<group>"; };
+		7F1F630D16EFB81D00018974 /* log-access-denied.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log-access-denied.png"; sourceTree = "<group>"; };
+		7F1F630E16EFB81D00018974 /* log-access-denied@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log-access-denied@2x.png"; sourceTree = "<group>"; };
+		7F1F631116EFBF7A00018974 /* log-access-granted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log-access-granted.png"; sourceTree = "<group>"; };
+		7F1F631216EFBF7A00018974 /* log-access-granted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log-access-granted@2x.png"; sourceTree = "<group>"; };
+		7F1F631516EFC3E200018974 /* BSLogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLogDetailViewController.h; sourceTree = "<group>"; };
+		7F1F631616EFC3E200018974 /* BSLogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLogDetailViewController.m; sourceTree = "<group>"; };
+		7F1F631716EFC3E200018974 /* BSLogDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSLogDetailViewController.xib; sourceTree = "<group>"; };
 		91FFF5CF89634B7590F908DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		F1B49A9B84AE490D93DEFAAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -153,9 +166,7 @@
 				7F1F62BE16EE985A00018974 /* Doors */,
 				7F1F626916EE04B700018974 /* BSAppDelegate.h */,
 				7F1F626A16EE04B700018974 /* BSAppDelegate.m */,
-				7F1F627216EE04B700018974 /* BSLoginViewController.h */,
-				7F1F627316EE04B700018974 /* BSLoginViewController.m */,
-				7F1F627516EE04B700018974 /* BSLoginViewController.xib */,
+				7F1F630C16EFB0E900018974 /* Login */,
 				7F1F62BC16EE943300018974 /* Main Menu */,
 				7F1F626116EE04B700018974 /* Supporting Files */,
 			);
@@ -205,6 +216,9 @@
 				7F1F62C316EE98A700018974 /* BSLogViewController.h */,
 				7F1F62C416EE98A700018974 /* BSLogViewController.m */,
 				7F1F62C516EE98A700018974 /* BSLogViewController.xib */,
+				7F1F631516EFC3E200018974 /* BSLogDetailViewController.h */,
+				7F1F631616EFC3E200018974 /* BSLogDetailViewController.m */,
+				7F1F631716EFC3E200018974 /* BSLogDetailViewController.xib */,
 			);
 			name = Log;
 			sourceTree = "<group>";
@@ -242,6 +256,10 @@
 		7F1F62DF16EEACA500018974 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7F1F630D16EFB81D00018974 /* log-access-denied.png */,
+				7F1F630E16EFB81D00018974 /* log-access-denied@2x.png */,
+				7F1F631116EFBF7A00018974 /* log-access-granted.png */,
+				7F1F631216EFBF7A00018974 /* log-access-granted@2x.png */,
 				7F1F62EA16EEB0CA00018974 /* icon-alerts@2x.png */,
 				7F1F62EB16EEB0CA00018974 /* icon-highlighted-alerts@2x.png */,
 				7F1F62F216EEB19000018974 /* icon-highlighted-settings@2x.png */,
@@ -254,6 +272,16 @@
 				7F1F62E616EEAE6D00018974 /* icon-highlighted-doors@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		7F1F630C16EFB0E900018974 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7F1F627216EE04B700018974 /* BSLoginViewController.h */,
+				7F1F627316EE04B700018974 /* BSLoginViewController.m */,
+				7F1F627516EE04B700018974 /* BSLoginViewController.xib */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +361,11 @@
 				7F1F62F516EEB19000018974 /* icon-settings@2x.png in Resources */,
 				7F1F62F816EEB1EF00018974 /* icon-highlighted-log@2x.png in Resources */,
 				7F1F62F916EEB1EF00018974 /* icon-log@2x.png in Resources */,
+				7F1F630F16EFB81E00018974 /* log-access-denied.png in Resources */,
+				7F1F631016EFB81E00018974 /* log-access-denied@2x.png in Resources */,
+				7F1F631316EFBF7A00018974 /* log-access-granted.png in Resources */,
+				7F1F631416EFBF7A00018974 /* log-access-granted@2x.png in Resources */,
+				7F1F631916EFC3E200018974 /* BSLogDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +402,7 @@
 				7F1F62D116EE990600018974 /* BSGuestViewController.m in Sources */,
 				7F1F62D716EE992000018974 /* BSAlertsViewController.m in Sources */,
 				7F1F62DD16EE993400018974 /* BSSettingsViewController.m in Sources */,
+				7F1F631816EFC3E200018974 /* BSLogDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
