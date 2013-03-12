@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    self.loginViewController = [[BSLoginViewController alloc] initWithNibName:@"BSViewController" bundle:nil];
+    self.loginViewController = [[BSLoginViewController alloc] initWithNibName:@"BSLoginViewController" bundle:nil];
     self.window.rootViewController = self.loginViewController;
     
 

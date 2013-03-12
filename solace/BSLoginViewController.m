@@ -15,9 +15,20 @@
 
 @implementation BSLoginViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     self.username.text = @"";
     self.password.text = @"";
     self.password.secureTextEntry = YES;
