@@ -49,7 +49,6 @@
     {
         screenBounds = CGRectMake(0, 20, screenSize.width, screenSize.height);
         _tabBarViewController.view.bounds = screenBounds;
-
     }
     else
     {
@@ -76,17 +75,35 @@
     [navController1 setTitle:@"Doors"];
     [navController1.topViewController setTitle:@"Doors"];
     
+    UIImage *doorsIcon = [UIImage imageNamed:@"icon-doors.png"];
+    UIImage *doorsIconSelected = [UIImage imageNamed:@"icon-highlighted-doors.png"];
+    [navController1.tabBarItem setFinishedSelectedImage:doorsIconSelected withFinishedUnselectedImage:doorsIcon];
+
+    
     [navController2 setTitle:@"Log"];
     [navController2.topViewController setTitle:@"Log"];
-    
+    UIImage *logIcon = [UIImage imageNamed:@"icon-log.png"];
+    UIImage *logIconSelected = [UIImage imageNamed:@"icon-highlighted-log.png"];
+    [navController2.tabBarItem setFinishedSelectedImage:logIconSelected withFinishedUnselectedImage:logIcon];
+
+
     [navController3 setTitle:@"Guests"];
     [navController3.topViewController setTitle:@"Guests"];
-    
+    UIImage *guestsIcon = [UIImage imageNamed:@"icon-guests.png"];
+    UIImage *guestsIconSelected = [UIImage imageNamed:@"icon-highlighted-guests.png"];
+    [navController3.tabBarItem setFinishedSelectedImage:guestsIconSelected withFinishedUnselectedImage:guestsIcon];
+
     [navController4 setTitle:@"Alerts"];
     [navController4.topViewController setTitle:@"Alerts"];
-    
+    UIImage *alertsIcon = [UIImage imageNamed:@"icon-alerts.png"];
+    UIImage *alertsIconSelected = [UIImage imageNamed:@"icon-highlighted-alerts.png"];
+    [navController4.tabBarItem setFinishedSelectedImage:alertsIconSelected withFinishedUnselectedImage:alertsIcon];
+
     [navController5 setTitle:@"Settings"];
     [navController5.topViewController setTitle:@"Settings"];
+    UIImage *settingsIcon = [UIImage imageNamed:@"icon-settings.png"];
+    UIImage *settingsIconSelected = [UIImage imageNamed:@"icon-highlighted-settings.png"];
+    [navController5.tabBarItem setFinishedSelectedImage:settingsIconSelected withFinishedUnselectedImage:settingsIcon];
 
     _tabBarViewController.viewControllers = [NSArray arrayWithObjects:navController1, navController2, navController3, navController4, navController5, nil];
     [self.view addSubview:_tabBarViewController.view];

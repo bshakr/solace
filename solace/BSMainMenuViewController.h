@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BSTabBarItemViewController.h"
-
 #import "BSAlertsViewController.h"
 #import "BSSettingsViewController.h"
 #import "BSGuestViewController.h"
