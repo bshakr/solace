@@ -26,7 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.timeLabel.text = self.time;
+    self.doorLabel.text = self.door;
+    self.detailsLabel.text = self.details;
 }
 
 - (void)didReceiveMemoryWarning

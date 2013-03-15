@@ -26,7 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    if(!self.detailViewController)
+    {
+        self.detailViewController = [[BSAlertsDetailViewController alloc] initWithNibName:@"BSAlertsDetailViewController" bundle:[NSBundle mainBundle]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
