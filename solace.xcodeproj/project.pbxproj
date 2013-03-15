@@ -49,6 +49,7 @@
 		7F1F631416EFBF7A00018974 /* log-access-granted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F631216EFBF7A00018974 /* log-access-granted@2x.png */; };
 		7F1F631816EFC3E200018974 /* BSLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F631616EFC3E200018974 /* BSLogDetailViewController.m */; };
 		7F1F631916EFC3E200018974 /* BSLogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F631716EFC3E200018974 /* BSLogDetailViewController.xib */; };
+		7F32BEA016F3E60000311C4A /* navbarBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F32BE9F16F3E60000311C4A /* navbarBG@2x.png */; };
 		7FE9C83B16F250DA0028B67E /* BSGuestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9C83916F250DA0028B67E /* BSGuestDetailViewController.m */; };
 		7FE9C83C16F250DA0028B67E /* BSGuestDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C83A16F250DA0028B67E /* BSGuestDetailViewController.xib */; };
 		7FE9C84016F34D940028B67E /* BSAlertsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9C83E16F34D940028B67E /* BSAlertsDetailViewController.m */; };
@@ -57,6 +58,10 @@
 		7FE9C84516F34F850028B67E /* alerts-package@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C84316F34F850028B67E /* alerts-package@2x.png */; };
 		7FE9C84C16F3517B0028B67E /* alerts-exclamation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C84A16F3517B0028B67E /* alerts-exclamation@2x.png */; };
 		7FE9C84D16F3517B0028B67E /* alerts-exlcamation.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C84B16F3517B0028B67E /* alerts-exlcamation.png */; };
+		7FE9C85716F374320028B67E /* BSSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C85616F374320028B67E /* BSSettingsCell.xib */; };
+		7FE9C85A16F374980028B67E /* BSSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9C85916F374980028B67E /* BSSettingsCell.m */; };
+		7FE9C85D16F395EB0028B67E /* BSSettingsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9C85C16F395EB0028B67E /* BSSettingsSwitchCell.m */; };
+		7FE9C85F16F396230028B67E /* BSSettingsSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C85E16F396230028B67E /* BSSettingsSwitchView.xib */; };
 		90555E9982E247CA9BBD363E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B49A9B84AE490D93DEFAAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +120,7 @@
 		7F1F631516EFC3E200018974 /* BSLogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLogDetailViewController.h; sourceTree = "<group>"; };
 		7F1F631616EFC3E200018974 /* BSLogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLogDetailViewController.m; sourceTree = "<group>"; };
 		7F1F631716EFC3E200018974 /* BSLogDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSLogDetailViewController.xib; sourceTree = "<group>"; };
+		7F32BE9F16F3E60000311C4A /* navbarBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbarBG@2x.png"; sourceTree = "<group>"; };
 		7FE9C83816F250DA0028B67E /* BSGuestDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGuestDetailViewController.h; sourceTree = "<group>"; };
 		7FE9C83916F250DA0028B67E /* BSGuestDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGuestDetailViewController.m; sourceTree = "<group>"; };
 		7FE9C83A16F250DA0028B67E /* BSGuestDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSGuestDetailViewController.xib; sourceTree = "<group>"; };
@@ -125,6 +131,12 @@
 		7FE9C84316F34F850028B67E /* alerts-package@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alerts-package@2x.png"; sourceTree = "<group>"; };
 		7FE9C84A16F3517B0028B67E /* alerts-exclamation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alerts-exclamation@2x.png"; sourceTree = "<group>"; };
 		7FE9C84B16F3517B0028B67E /* alerts-exlcamation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alerts-exlcamation.png"; sourceTree = "<group>"; };
+		7FE9C85616F374320028B67E /* BSSettingsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSSettingsCell.xib; sourceTree = "<group>"; };
+		7FE9C85816F374980028B67E /* BSSettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSettingsCell.h; sourceTree = "<group>"; };
+		7FE9C85916F374980028B67E /* BSSettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSettingsCell.m; sourceTree = "<group>"; };
+		7FE9C85B16F395EB0028B67E /* BSSettingsSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSettingsSwitchCell.h; sourceTree = "<group>"; };
+		7FE9C85C16F395EB0028B67E /* BSSettingsSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSettingsSwitchCell.m; sourceTree = "<group>"; };
+		7FE9C85E16F396230028B67E /* BSSettingsSwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSSettingsSwitchView.xib; sourceTree = "<group>"; };
 		91FFF5CF89634B7590F908DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		F1B49A9B84AE490D93DEFAAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -273,6 +285,12 @@
 				7F1F62DA16EE993400018974 /* BSSettingsViewController.h */,
 				7F1F62DB16EE993400018974 /* BSSettingsViewController.m */,
 				7F1F62DC16EE993400018974 /* BSSettingsViewController.xib */,
+				7FE9C85616F374320028B67E /* BSSettingsCell.xib */,
+				7FE9C85816F374980028B67E /* BSSettingsCell.h */,
+				7FE9C85916F374980028B67E /* BSSettingsCell.m */,
+				7FE9C85B16F395EB0028B67E /* BSSettingsSwitchCell.h */,
+				7FE9C85C16F395EB0028B67E /* BSSettingsSwitchCell.m */,
+				7FE9C85E16F396230028B67E /* BSSettingsSwitchView.xib */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -280,6 +298,7 @@
 		7F1F62DF16EEACA500018974 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7F32BE9F16F3E60000311C4A /* navbarBG@2x.png */,
 				7FE9C84216F34F850028B67E /* alerts-package.png */,
 				7FE9C84316F34F850028B67E /* alerts-package@2x.png */,
 				7FE9C84A16F3517B0028B67E /* alerts-exclamation@2x.png */,
@@ -400,6 +419,9 @@
 				7FE9C84516F34F850028B67E /* alerts-package@2x.png in Resources */,
 				7FE9C84C16F3517B0028B67E /* alerts-exclamation@2x.png in Resources */,
 				7FE9C84D16F3517B0028B67E /* alerts-exlcamation.png in Resources */,
+				7FE9C85716F374320028B67E /* BSSettingsCell.xib in Resources */,
+				7FE9C85F16F396230028B67E /* BSSettingsSwitchView.xib in Resources */,
+				7F32BEA016F3E60000311C4A /* navbarBG@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +461,8 @@
 				7F1F631816EFC3E200018974 /* BSLogDetailViewController.m in Sources */,
 				7FE9C83B16F250DA0028B67E /* BSGuestDetailViewController.m in Sources */,
 				7FE9C84016F34D940028B67E /* BSAlertsDetailViewController.m in Sources */,
+				7FE9C85A16F374980028B67E /* BSSettingsCell.m in Sources */,
+				7FE9C85D16F395EB0028B67E /* BSSettingsSwitchCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

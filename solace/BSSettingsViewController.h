@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSSettingsCell.h"
+#import "BSSettingsSwitchCell.h"
+@interface BSSettingsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>{
+    BSSettingsCell *settingsTableViewCell;
+    BSSettingsSwitchCell *settingsSwitchTableViewCell;
 
-@interface BSSettingsViewController : UIViewController
-
+}
+//@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, assign) IBOutlet BSSettingsCell *settingsTableViewCell;
+@property (nonatomic, assign) IBOutlet BSSettingsSwitchCell *settingsSwitchTableViewCell;
 @end

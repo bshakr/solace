@@ -12,6 +12,7 @@
 #import "BSGuestViewController.h"
 #import "BSLogViewController.h"
 #import "BSDoorViewController.h"
+#import "BSNavigationBar.h"
 
 
 @interface BSMainMenuViewController : UIViewController <UITabBarControllerDelegate, UINavigationControllerDelegate>

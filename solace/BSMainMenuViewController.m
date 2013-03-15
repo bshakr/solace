@@ -46,7 +46,7 @@
     BSLogViewController *logController = [[BSLogViewController alloc] initWithNibName:@"BSLogViewController" bundle:nil];
     BSGuestViewController *guestController = [[BSGuestViewController alloc] initWithNibName:@"BSGuestViewController" bundle:nil];
     BSAlertsViewController *alertsController = [[BSAlertsViewController alloc] initWithNibName:@"BSAlertsViewController" bundle:nil];
-    BSSettingsViewController *settingsController = [[BSSettingsViewController alloc] initWithNibName:@"BSSettingsViewController" bundle:nil];
+    BSSettingsViewController *settingsController = [[BSSettingsViewController alloc] initWithStyle:UITableViewStyleGrouped];
     
     
     
@@ -56,7 +56,13 @@
     UINavigationController *navController4 = [[UINavigationController alloc] initWithRootViewController: alertsController];
     UINavigationController *navController5 = [[UINavigationController alloc] initWithRootViewController: settingsController];
     
-    
+    UIImage *navbarBackground = [UIImage imageNamed:@"navbarBG.png"];
+
+    [navController1.navigationBar setBackgroundImage:navbarBackground forBarMetrics:UIBarMetricsDefault];
+    [navController2.navigationBar setBackgroundImage:navbarBackground forBarMetrics:UIBarMetricsDefault];
+    [navController3.navigationBar setBackgroundImage:navbarBackground forBarMetrics:UIBarMetricsDefault];
+    [navController4.navigationBar setBackgroundImage:navbarBackground forBarMetrics:UIBarMetricsDefault];
+    [navController5.navigationBar setBackgroundImage:navbarBackground forBarMetrics:UIBarMetricsDefault];
     
     [navController1 setTitle:@"Doors"];
     [navController1.topViewController setTitle:@"Doors"];

@@ -21,6 +21,8 @@
     if (self) {
         // Custom initialization
 
+
+
     }
     return self;
 }
@@ -54,6 +56,11 @@
     if(indexPath.row == 0)
     {
         cell.textLabel.text = @"Main Door";
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        UISwitch *aSwitch = [[UISwitch alloc] init];
+        [aSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+        cell.accessoryView = aSwitch;
+
     }
     else if(indexPath.row == 1)
     {
