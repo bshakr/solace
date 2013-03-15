@@ -49,6 +49,14 @@
 		7F1F631416EFBF7A00018974 /* log-access-granted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F631216EFBF7A00018974 /* log-access-granted@2x.png */; };
 		7F1F631816EFC3E200018974 /* BSLogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1F631616EFC3E200018974 /* BSLogDetailViewController.m */; };
 		7F1F631916EFC3E200018974 /* BSLogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F631716EFC3E200018974 /* BSLogDetailViewController.xib */; };
+		7FE9C83B16F250DA0028B67E /* BSGuestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9C83916F250DA0028B67E /* BSGuestDetailViewController.m */; };
+		7FE9C83C16F250DA0028B67E /* BSGuestDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C83A16F250DA0028B67E /* BSGuestDetailViewController.xib */; };
+		7FE9C84016F34D940028B67E /* BSAlertsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9C83E16F34D940028B67E /* BSAlertsDetailViewController.m */; };
+		7FE9C84116F34D940028B67E /* BSAlertsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C83F16F34D940028B67E /* BSAlertsDetailViewController.xib */; };
+		7FE9C84416F34F850028B67E /* alerts-package.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C84216F34F850028B67E /* alerts-package.png */; };
+		7FE9C84516F34F850028B67E /* alerts-package@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C84316F34F850028B67E /* alerts-package@2x.png */; };
+		7FE9C84C16F3517B0028B67E /* alerts-exclamation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C84A16F3517B0028B67E /* alerts-exclamation@2x.png */; };
+		7FE9C84D16F3517B0028B67E /* alerts-exlcamation.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE9C84B16F3517B0028B67E /* alerts-exlcamation.png */; };
 		90555E9982E247CA9BBD363E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B49A9B84AE490D93DEFAAD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +115,16 @@
 		7F1F631516EFC3E200018974 /* BSLogDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLogDetailViewController.h; sourceTree = "<group>"; };
 		7F1F631616EFC3E200018974 /* BSLogDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLogDetailViewController.m; sourceTree = "<group>"; };
 		7F1F631716EFC3E200018974 /* BSLogDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSLogDetailViewController.xib; sourceTree = "<group>"; };
+		7FE9C83816F250DA0028B67E /* BSGuestDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSGuestDetailViewController.h; sourceTree = "<group>"; };
+		7FE9C83916F250DA0028B67E /* BSGuestDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSGuestDetailViewController.m; sourceTree = "<group>"; };
+		7FE9C83A16F250DA0028B67E /* BSGuestDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSGuestDetailViewController.xib; sourceTree = "<group>"; };
+		7FE9C83D16F34D940028B67E /* BSAlertsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAlertsDetailViewController.h; sourceTree = "<group>"; };
+		7FE9C83E16F34D940028B67E /* BSAlertsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAlertsDetailViewController.m; sourceTree = "<group>"; };
+		7FE9C83F16F34D940028B67E /* BSAlertsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSAlertsDetailViewController.xib; sourceTree = "<group>"; };
+		7FE9C84216F34F850028B67E /* alerts-package.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alerts-package.png"; sourceTree = "<group>"; };
+		7FE9C84316F34F850028B67E /* alerts-package@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alerts-package@2x.png"; sourceTree = "<group>"; };
+		7FE9C84A16F3517B0028B67E /* alerts-exclamation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alerts-exclamation@2x.png"; sourceTree = "<group>"; };
+		7FE9C84B16F3517B0028B67E /* alerts-exlcamation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alerts-exlcamation.png"; sourceTree = "<group>"; };
 		91FFF5CF89634B7590F908DC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		F1B49A9B84AE490D93DEFAAD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -229,6 +247,9 @@
 				7F1F62CE16EE990600018974 /* BSGuestViewController.h */,
 				7F1F62CF16EE990600018974 /* BSGuestViewController.m */,
 				7F1F62D016EE990600018974 /* BSGuestViewController.xib */,
+				7FE9C83816F250DA0028B67E /* BSGuestDetailViewController.h */,
+				7FE9C83916F250DA0028B67E /* BSGuestDetailViewController.m */,
+				7FE9C83A16F250DA0028B67E /* BSGuestDetailViewController.xib */,
 			);
 			name = Guests;
 			sourceTree = "<group>";
@@ -239,6 +260,9 @@
 				7F1F62D416EE992000018974 /* BSAlertsViewController.h */,
 				7F1F62D516EE992000018974 /* BSAlertsViewController.m */,
 				7F1F62D616EE992000018974 /* BSAlertsViewController.xib */,
+				7FE9C83D16F34D940028B67E /* BSAlertsDetailViewController.h */,
+				7FE9C83E16F34D940028B67E /* BSAlertsDetailViewController.m */,
+				7FE9C83F16F34D940028B67E /* BSAlertsDetailViewController.xib */,
 			);
 			name = Alerts;
 			sourceTree = "<group>";
@@ -256,6 +280,10 @@
 		7F1F62DF16EEACA500018974 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7FE9C84216F34F850028B67E /* alerts-package.png */,
+				7FE9C84316F34F850028B67E /* alerts-package@2x.png */,
+				7FE9C84A16F3517B0028B67E /* alerts-exclamation@2x.png */,
+				7FE9C84B16F3517B0028B67E /* alerts-exlcamation.png */,
 				7F1F630D16EFB81D00018974 /* log-access-denied.png */,
 				7F1F630E16EFB81D00018974 /* log-access-denied@2x.png */,
 				7F1F631116EFBF7A00018974 /* log-access-granted.png */,
@@ -366,6 +394,12 @@
 				7F1F631316EFBF7A00018974 /* log-access-granted.png in Resources */,
 				7F1F631416EFBF7A00018974 /* log-access-granted@2x.png in Resources */,
 				7F1F631916EFC3E200018974 /* BSLogDetailViewController.xib in Resources */,
+				7FE9C83C16F250DA0028B67E /* BSGuestDetailViewController.xib in Resources */,
+				7FE9C84116F34D940028B67E /* BSAlertsDetailViewController.xib in Resources */,
+				7FE9C84416F34F850028B67E /* alerts-package.png in Resources */,
+				7FE9C84516F34F850028B67E /* alerts-package@2x.png in Resources */,
+				7FE9C84C16F3517B0028B67E /* alerts-exclamation@2x.png in Resources */,
+				7FE9C84D16F3517B0028B67E /* alerts-exlcamation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +437,8 @@
 				7F1F62D716EE992000018974 /* BSAlertsViewController.m in Sources */,
 				7F1F62DD16EE993400018974 /* BSSettingsViewController.m in Sources */,
 				7F1F631816EFC3E200018974 /* BSLogDetailViewController.m in Sources */,
+				7FE9C83B16F250DA0028B67E /* BSGuestDetailViewController.m in Sources */,
+				7FE9C84016F34D940028B67E /* BSAlertsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

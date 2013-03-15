@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSAlertsDetailViewController.h"
 
-@interface BSAlertsViewController : UIViewController
+@interface BSAlertsViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet BSAlertsDetailViewController *detailViewController;
 
 @end
