@@ -18,5 +18,5 @@
 @property (strong, nonatomic)     NSString *time;
 @property (strong, nonatomic)  NSString *door;
 @property (strong, nonatomic)  NSString *details;
-
+@property (strong, nonatomic) NSString *navTitle;
 @end

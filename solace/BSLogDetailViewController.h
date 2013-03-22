@@ -21,5 +21,6 @@
 @property (strong, nonatomic)  NSString *door;
 @property (strong, nonatomic)  NSString *method;
 
+@property (strong, nonatomic)  NSString *navTitle;
 
 @end

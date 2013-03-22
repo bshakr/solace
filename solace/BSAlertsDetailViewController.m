@@ -26,11 +26,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+-(void) viewWillAppear:(BOOL)animated{
     self.timeLabel.text = self.time;
     self.doorLabel.text = self.door;
     self.detailsLabel.text = self.details;
-}
+    [self.navigationController.topViewController setTitle: self.navTitle];
 
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

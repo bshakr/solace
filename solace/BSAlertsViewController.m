@@ -142,20 +142,24 @@
         self.detailViewController.time = @"02/27/2013 8:39:03 am";
         self.detailViewController.door = @"Apartment 101";
         self.detailViewController.details = @"iPhone";
+        self.detailViewController.navTitle = @"Pay Rent";
+
+
     }
     else if(indexPath.row == 1)
     {
         self.detailViewController.time = @"02/26/2013 10:23:03 pm";
         self.detailViewController.door = @"Apartment 101";
         self.detailViewController.details = @"iPhone";
-        
+        self.detailViewController.navTitle = @"You have a package";
     }
     else if(indexPath.row == 2)
     {
         self.detailViewController.time = @"02/25/2013 12:48:39 pm";
         self.detailViewController.door = @"Apartment 101";
         self.detailViewController.details = @"iPhone";
-        
+        self.detailViewController.navTitle = @"You have a package";
+
     }
     
     [self.navigationController pushViewController:self.detailViewController animated:YES];

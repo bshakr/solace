@@ -25,7 +25,6 @@
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,9 +36,9 @@
         self.detailViewController = [[BSLogDetailViewController alloc] initWithNibName:@"BSLogDetailViewController" bundle:[NSBundle mainBundle]];
     }
     self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView delegate:self];
+    
 
 }
-
 -(void) setupSearchBar
 {
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
@@ -151,6 +150,7 @@
         self.detailViewController.user = @"Karim Maurice";
         self.detailViewController.door = @"Apartment 101";
         self.detailViewController.method = @"iPhone";
+        self.detailViewController.navTitle = @"Access Granted";
     }
     else if(indexPath.row == 1)
     {
@@ -158,6 +158,8 @@
         self.detailViewController.user = @"Rick Zarr";
         self.detailViewController.door = @"Apartment 101";
         self.detailViewController.method = @"iPhone";
+        self.detailViewController.navTitle = @"Access Granted";
+
         
     }
     else if(indexPath.row == 2)
@@ -166,6 +168,8 @@
         self.detailViewController.user = @"Maintance";
         self.detailViewController.door = @"Apartment 101";
         self.detailViewController.method = @"iPhone";
+        self.detailViewController.navTitle = @"Access Denied";
+
         
     }
     

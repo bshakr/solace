@@ -40,8 +40,7 @@
 -(void) initializeTabBar
 {
     self.tabBarController = [[UITabBarController alloc] init];
-
-
+    self.tabBarController.delegate = self;
     BSDoorViewController *doorController = [[BSDoorViewController alloc] initWithNibName:@"BSDoorViewController" bundle:nil];
     BSLogViewController *logController = [[BSLogViewController alloc] initWithNibName:@"BSLogViewController" bundle:nil];
     BSGuestViewController *guestController = [[BSGuestViewController alloc] initWithNibName:@"BSGuestViewController" bundle:nil];
