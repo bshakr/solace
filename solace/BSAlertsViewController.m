@@ -36,6 +36,9 @@
     {
         self.detailViewController = [[BSAlertsDetailViewController alloc] initWithNibName:@"BSAlertsDetailViewController" bundle:[NSBundle mainBundle]];
     }
+    
+    self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView delegate:self];
+
 }
 -(void) setupSearchBar
 {
@@ -55,6 +58,32 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - SSPullToRefresh
+
+-(void) refresh
+{
+    [self.pullToRefreshView startLoading];
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self.pullToRefreshView finishLoading];
+    });
+}
+
+-(void) pullToRefreshViewDidStartLoading:(SSPullToRefreshView *)view{
+    [self refresh];
+}
+
+
+#pragma makr - Search
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    return YES;
+}
+
 #pragma mark - UITableViewDataSource methods
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

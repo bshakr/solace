@@ -38,7 +38,6 @@
     }
     self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView delegate:self];
 
-    // Do any additional setup after loading the view from its nib.
 }
 
 -(void) setupSearchBar
