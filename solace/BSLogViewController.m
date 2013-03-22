@@ -8,8 +8,11 @@
 
 #import "BSLogViewController.h"
 
-@interface BSLogViewController ()
+@interface BSLogViewController  ()<UISearchDisplayDelegate>
 
+@property (nonatomic, strong) UISearchBar *searchBar;
+@property (nonatomic, strong) UISearchDisplayController *searchController;
+@property (nonatomic, strong) NSMutableArray *searchResults;
 @end
 
 @implementation BSLogViewController
@@ -26,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupSearchBar];
+    self.searchResults = [NSMutableArray array];
     [self refresh];
     if(!self.detailViewController)
     {
@@ -34,6 +39,20 @@
     self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView delegate:self];
 
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void) setupSearchBar
+{
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+    self.tableView.tableHeaderView = self.searchBar;
+    
+    self.searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar contentsController:self];
+    self.searchController.searchResultsDataSource = self;
+    self.searchController.searchResultsDelegate = self;
+    self.searchController.delegate = self;
+    CGPoint offset = CGPointMake(0, self.searchBar.frame.size.height);
+    self.tableView.contentOffset = offset;
+    
 }
 -(void) refresh
 {
@@ -57,6 +76,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma makr - Search
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    return YES;
+}
 
 
 #pragma mark - UITableViewDataSource methods
@@ -67,7 +92,12 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    if(tableView == self.tableView)
+    {
+        return 3;
+    } else{
+        return self.searchResults.count;
+    }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

@@ -8,7 +8,10 @@
 
 #import "BSAlertsViewController.h"
 
-@interface BSAlertsViewController ()
+@interface BSAlertsViewController ()<UISearchDisplayDelegate>
+@property (nonatomic, strong) UISearchBar *searchBar;
+@property (nonatomic, strong) UISearchDisplayController *searchController;
+@property (nonatomic, strong) NSMutableArray *searchResults;
 
 @end
 
@@ -26,12 +29,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupSearchBar];
+    self.searchResults = [NSMutableArray array];
+
     if(!self.detailViewController)
     {
         self.detailViewController = [[BSAlertsDetailViewController alloc] initWithNibName:@"BSAlertsDetailViewController" bundle:[NSBundle mainBundle]];
     }
 }
-
+-(void) setupSearchBar
+{
+    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+    self.tableView.tableHeaderView = self.searchBar;
+    
+    self.searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar contentsController:self];
+    self.searchController.searchResultsDataSource = self;
+    self.searchController.searchResultsDelegate = self;
+    self.searchController.delegate = self;
+    CGPoint offset = CGPointMake(0, self.searchBar.frame.size.height);
+    self.tableView.contentOffset = offset;
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -45,7 +63,13 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    if(tableView == self.tableView)
+    {
+        return 2;
+    } else{
+        return self.searchResults.count;
+    }
+
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
