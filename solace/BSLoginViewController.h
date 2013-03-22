@@ -10,8 +10,11 @@
 #import "BSMainMenuViewController.h"
 
 @interface BSLoginViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UIButton *about;
+
 @property (weak, nonatomic) IBOutlet UIButton *login;
 
 @end

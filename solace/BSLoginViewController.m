@@ -7,6 +7,7 @@
 //
 
 #import "BSLoginViewController.h"
+#import "BSABoutViewController.h"
 #import "SVProgressHUD.h"
 #import "BSAppDelegate.h"
 @interface BSLoginViewController ()
@@ -40,6 +41,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)showAboutView
+{
+    BSABoutViewController *aboutViewController = [[BSABoutViewController alloc] init];
+    [self presentViewController:aboutViewController animated:YES completion:nil];
+
 }
 -(IBAction)loginCheck
 {

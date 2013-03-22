@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0AB4B916FCB7F8004B241B /* SolaceLoginLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AB4B716FCB7F8004B241B /* SolaceLoginLogo.png */; };
+		7F0AB4BA16FCB7F8004B241B /* SolaceLoginLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AB4B816FCB7F8004B241B /* SolaceLoginLogo@2x.png */; };
+		7F0AB4C116FCBC93004B241B /* about-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AB4BF16FCBC93004B241B /* about-icon.png */; };
+		7F0AB4C216FCBC93004B241B /* about-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AB4C016FCBC93004B241B /* about-icon@2x.png */; };
+		7F0AB4C716FCBE8B004B241B /* BSABoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0AB4C516FCBE8B004B241B /* BSABoutViewController.m */; };
+		7F0AB4C816FCBE8B004B241B /* BSABoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AB4C616FCBE8B004B241B /* BSABoutViewController.xib */; };
+		7F0AB4CB16FCBFF7004B241B /* dismiss-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AB4C916FCBFF7004B241B /* dismiss-icon.png */; };
+		7F0AB4CC16FCBFF7004B241B /* dismiss-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AB4CA16FCBFF7004B241B /* dismiss-icon@2x.png */; };
 		7F1F625B16EE04B700018974 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F625A16EE04B700018974 /* UIKit.framework */; };
 		7F1F625D16EE04B700018974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F625C16EE04B700018974 /* Foundation.framework */; };
 		7F1F625F16EE04B700018974 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1F625E16EE04B700018974 /* CoreGraphics.framework */; };
@@ -66,6 +74,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F0AB4B716FCB7F8004B241B /* SolaceLoginLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SolaceLoginLogo.png; path = ../../../iOS/SolaceLoginLogo.png; sourceTree = "<group>"; };
+		7F0AB4B816FCB7F8004B241B /* SolaceLoginLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SolaceLoginLogo@2x.png"; path = "../../../iOS/SolaceLoginLogo@2x.png"; sourceTree = "<group>"; };
+		7F0AB4BF16FCBC93004B241B /* about-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-icon.png"; sourceTree = "<group>"; };
+		7F0AB4C016FCBC93004B241B /* about-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-icon@2x.png"; sourceTree = "<group>"; };
+		7F0AB4C416FCBE8B004B241B /* BSABoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSABoutViewController.h; sourceTree = "<group>"; };
+		7F0AB4C516FCBE8B004B241B /* BSABoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSABoutViewController.m; sourceTree = "<group>"; };
+		7F0AB4C616FCBE8B004B241B /* BSABoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSABoutViewController.xib; sourceTree = "<group>"; };
+		7F0AB4C916FCBFF7004B241B /* dismiss-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dismiss-icon.png"; sourceTree = "<group>"; };
+		7F0AB4CA16FCBFF7004B241B /* dismiss-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dismiss-icon@2x.png"; sourceTree = "<group>"; };
 		7F1F625716EE04B700018974 /* solace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1F625A16EE04B700018974 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7F1F625C16EE04B700018974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -156,6 +173,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F0AB4C316FCBE60004B241B /* About */ = {
+			isa = PBXGroup;
+			children = (
+				7F0AB4C416FCBE8B004B241B /* BSABoutViewController.h */,
+				7F0AB4C516FCBE8B004B241B /* BSABoutViewController.m */,
+				7F0AB4C616FCBE8B004B241B /* BSABoutViewController.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
 		7F1F624E16EE04B700018974 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +215,7 @@
 		7F1F626016EE04B700018974 /* solace */ = {
 			isa = PBXGroup;
 			children = (
+				7F0AB4C316FCBE60004B241B /* About */,
 				7F1F62DF16EEACA500018974 /* Images */,
 				7F1F62D916EE992700018974 /* Settings */,
 				7F1F62D316EE991000018974 /* Alerts */,
@@ -298,6 +326,12 @@
 		7F1F62DF16EEACA500018974 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7F0AB4C916FCBFF7004B241B /* dismiss-icon.png */,
+				7F0AB4CA16FCBFF7004B241B /* dismiss-icon@2x.png */,
+				7F0AB4B716FCB7F8004B241B /* SolaceLoginLogo.png */,
+				7F0AB4B816FCB7F8004B241B /* SolaceLoginLogo@2x.png */,
+				7F0AB4BF16FCBC93004B241B /* about-icon.png */,
+				7F0AB4C016FCBC93004B241B /* about-icon@2x.png */,
 				7F32BE9F16F3E60000311C4A /* navbarBG@2x.png */,
 				7FE9C84216F34F850028B67E /* alerts-package.png */,
 				7FE9C84316F34F850028B67E /* alerts-package@2x.png */,
@@ -422,6 +456,13 @@
 				7FE9C85716F374320028B67E /* BSSettingsCell.xib in Resources */,
 				7FE9C85F16F396230028B67E /* BSSettingsSwitchView.xib in Resources */,
 				7F32BEA016F3E60000311C4A /* navbarBG@2x.png in Resources */,
+				7F0AB4B916FCB7F8004B241B /* SolaceLoginLogo.png in Resources */,
+				7F0AB4BA16FCB7F8004B241B /* SolaceLoginLogo@2x.png in Resources */,
+				7F0AB4C116FCBC93004B241B /* about-icon.png in Resources */,
+				7F0AB4C216FCBC93004B241B /* about-icon@2x.png in Resources */,
+				7F0AB4C816FCBE8B004B241B /* BSABoutViewController.xib in Resources */,
+				7F0AB4CB16FCBFF7004B241B /* dismiss-icon.png in Resources */,
+				7F0AB4CC16FCBFF7004B241B /* dismiss-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +504,7 @@
 				7FE9C84016F34D940028B67E /* BSAlertsDetailViewController.m in Sources */,
 				7FE9C85A16F374980028B67E /* BSSettingsCell.m in Sources */,
 				7FE9C85D16F395EB0028B67E /* BSSettingsSwitchCell.m in Sources */,
+				7F0AB4C716FCBE8B004B241B /* BSABoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +543,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -532,6 +575,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -548,10 +592,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91FFF5CF89634B7590F908DC /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bassem Shaker (T8U9W72MML)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Bassem Shaker (T8U9W72MML)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bassem Shaker (T8U9W72MML)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "solace/solace-Prefix.pch";
 				INFOPLIST_FILE = "solace/solace-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -560,10 +610,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91FFF5CF89634B7590F908DC /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bassem Shaker (T8U9W72MML)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bassem Shaker (T8U9W72MML)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "solace/solace-Prefix.pch";
 				INFOPLIST_FILE = "solace/solace-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
