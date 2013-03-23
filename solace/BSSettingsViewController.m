@@ -176,9 +176,11 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    BSLoginViewController *menuViewController = [[BSLoginViewController alloc] init];
-    [self presentViewController:menuViewController animated:YES completion:nil];
+    if(indexPath.section == 5)
+    {
+        BSLoginViewController *menuViewController = [[BSLoginViewController alloc] init];
+        [self presentViewController:menuViewController animated:YES completion:nil];
+    }
 }
 
 @end
