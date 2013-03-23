@@ -24,6 +24,12 @@
 
 
 }
+- (IBAction)textFieldFinished:(id)sender
+{
+    //any custom saving actions
+    [sender resignFirstResponder];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -86,6 +92,11 @@
     if (cell == nil) {
         [[NSBundle mainBundle] loadNibNamed:@"BSSettingsCell" owner:self options:nil];
         cell = _settingsTableViewCell;
+        [cell.textField setDelegate:self];
+        [cell.textField setReturnKeyType:UIReturnKeyDone];
+        [cell.textField addTarget:self action:@selector(textFieldFinished:)
+                                       forControlEvents:UIControlEventEditingDidEndOnExit];
+
         _settingsTableViewCell = nil;
     }
     if (switchCell == nil) {
@@ -102,7 +113,7 @@
     if(indexPath.section == 0)
     {
         if (indexPath.row == 0) {
-            cell.label.text = @"RFID";
+            cell.label.text = @"Key Card";
             //cell.textField.text = ingredient.name;
             cell.textField.placeholder = @"23379711";
         }
@@ -154,9 +165,9 @@
     }
     else if(indexPath.section == 4)
     {
-        defaultCell.textLabel.text = @"http://zarrhome.net";
-        defaultCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        return  defaultCell;
+        cell.label.text = @"Edit Building";
+        cell.textField.placeholder = @"http://zarrhome.net";
+        return  cell;
         
     }
 
