@@ -5,22 +5,12 @@
 //  Created by Bassem on 11/03/2013.
 //  Copyright (c) 2013 Bassem Shaker. All rights reserved.
 //
-
+#import "BSLoginViewController.h"
 #import "BSSettingsViewController.h"
 @interface BSSettingsViewController ()
 @end
 
 @implementation BSSettingsViewController
-/**
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-**/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,8 +21,7 @@
     
     self.view = self.tableView;
 
-	self.tableView.allowsSelection = NO;
-	self.tableView.allowsSelectionDuringEditing = NO;
+
 
 }
 
@@ -57,14 +46,15 @@
         return 2;
     else if(section == 4)
         return 1;
-
+    else if(section == 5)
+        return 1;
     else
         return 0;
         
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+    return 6;
 }
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     // The header for the section is the region name -- get this from the region at the section index.
@@ -170,11 +160,25 @@
         
     }
 
+    else if(indexPath.section == 5)
+    {
+
+        defaultCell.textLabel.text = @"Logout";
+        defaultCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        return  defaultCell;
+        
+    }
+    
 
         return cell;
 
     
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    BSLoginViewController *menuViewController = [[BSLoginViewController alloc] init];
+    [self presentViewController:menuViewController animated:YES completion:nil];
+}
 
 @end
