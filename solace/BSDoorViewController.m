@@ -8,8 +8,10 @@
 
 #import "BSDoorViewController.h"
 #import "SVProgressHUD.h"
+#import "BSCheckBox.h"
 @interface BSDoorViewController ()
 {
+
 }
 @end
 
@@ -38,6 +40,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma — 
+#pragma mark - UITableViewDataSource methods
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 68;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -46,46 +55,55 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(cell == nil)
+    static NSString *doorCellIdentifier = @"BSDoorCell";
+
+    BSDoorCell *doorCell = (BSDoorCell *)[tableView dequeueReusableCellWithIdentifier:doorCellIdentifier];
+
+    if(doorCell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        [[NSBundle mainBundle] loadNibNamed:@"BSDoorCell" owner:self options:nil];
+        doorCell = _doorCell;
+        _doorCell = nil;
+
     }
+    doorCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [doorCell.leSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
+    [doorCell.checkbox addTarget:self action:@selector(checkboxSelected:) forControlEvents:UIControlEventTouchUpInside];
+
     if(indexPath.row == 0)
     {
-        cell.textLabel.text = @"Main Door";
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        UISwitch *aSwitch = [[UISwitch alloc] init];
-        [aSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
-        cell.accessoryView = aSwitch;
+        doorCell.label.text = @"Main Door";
 
     }
     else if(indexPath.row == 1)
     {
-        cell.textLabel.text = @"Apartment 101";
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        UISwitch *aSwitch = [[UISwitch alloc] init];
-        [aSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
-        cell.accessoryView = aSwitch;
-        
+        doorCell.label.text = @"Apartment 101";
     }
     else if(indexPath.row == 2)
     {
-        cell.textLabel.text = @"Apartment 102";
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        UISwitch *aSwitch = [[UISwitch alloc] init];
-        [aSwitch addTarget:self action:@selector(switchChanged:) forControlEvents:UIControlEventValueChanged];
-        cell.accessoryView = aSwitch;
+        doorCell.label.text = @"Apartment 102";
 
     }
 
-    return cell;
+    return doorCell;
 }
 -(void)checkboxSelected:(id)sender
 {
- [SVProgressHUD showErrorWithStatus:@"Checkbox changed"];           
+    if([sender isKindOfClass:[BSCheckBox class]] )
+    {
+        BSCheckBox *checkBox = (BSCheckBox *)sender;
+        if(checkBox.checked == NO)
+        {
+            checkBox.checked = YES;
+            [checkBox setImage:[UIImage imageNamed:@"checkbox-checked.png"] forState:UIControlStateNormal];
+        }
+        else{
+            checkBox.checked = NO;
+            [checkBox setImage:[UIImage imageNamed:@"checkbox-unchecked.png"] forState:UIControlStateNormal];
+        }
+        [SVProgressHUD showErrorWithStatus:@"Checkbox changed"];
+
+    }
 }
 -(void) switchChanged:(id)sender{
  [SVProgressHUD showErrorWithStatus:@"UI Switch changed"];       

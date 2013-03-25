@@ -7,6 +7,9 @@
 //
 #import "BSLoginViewController.h"
 #import "BSSettingsViewController.h"
+#import "BSCheckBox.h"
+#import "SVProgressHUD.h"
+
 @interface BSSettingsViewController ()
 @end
 
@@ -43,7 +46,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(section == 0)
-        return 1;
+        return 2;
     else if(section == 1)
         return 2;
     else if(section == 2)
@@ -85,10 +88,13 @@
     static NSString *SettingsCellIdentifier = @"BSSettingsCell";
     static NSString *SettingsSwitchCellIdentifier = @"BSSettingsSwitchCell";
     static NSString *DefaultCellIdentifier = @"DefaultCell";
-    
+    static NSString *CheckBoxCellIdentifier = @"CheckboxCell";
+   
+    BSCheckBoxCell *checkCell =(BSCheckBoxCell *)[tableView dequeueReusableCellWithIdentifier:CheckBoxCellIdentifier];
     BSSettingsCell *cell = (BSSettingsCell *)[tableView dequeueReusableCellWithIdentifier:SettingsCellIdentifier];
     BSSettingsSwitchCell *switchCell = (BSSettingsSwitchCell *)[tableView dequeueReusableCellWithIdentifier:SettingsSwitchCellIdentifier];
     UITableViewCell *defaultCell = [tableView dequeueReusableCellWithIdentifier:DefaultCellIdentifier];
+    
     if (cell == nil) {
         [[NSBundle mainBundle] loadNibNamed:@"BSSettingsCell" owner:self options:nil];
         cell = _settingsTableViewCell;
@@ -104,20 +110,35 @@
         switchCell = _settingsSwitchTableViewCell;
         _settingsSwitchTableViewCell = nil;
     }
+    if (checkCell == nil) {
+        [[NSBundle mainBundle] loadNibNamed:@"BSCheckBoxCell" owner:self options:nil];
+        checkCell = _checkBoxCell;
+        _checkBoxCell = nil;
+    }
 
     if(defaultCell == nil)
     {
         defaultCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:DefaultCellIdentifier];
     }
-
+        
     if(indexPath.section == 0)
     {
         if (indexPath.row == 0) {
             cell.label.text = @"Key Card";
             //cell.textField.text = ingredient.name;
             cell.textField.placeholder = @"23379711";
+
+            return cell;
         }
-        return cell;
+        if(indexPath.row == 1)
+        {
+            checkCell.selectionStyle = UITableViewCellSelectionStyleNone;
+            checkCell.label.text = @"Disable Tag";
+            [checkCell.checkbox addTarget:self action:@selector(checkboxSelected:) forControlEvents:UIControlEventTouchUpInside];
+
+            return checkCell;
+        }
+
     }
     else if(indexPath.section == 1)
     {
@@ -193,5 +214,25 @@
         [self presentViewController:menuViewController animated:YES completion:nil];
     }
 }
+
+-(void)checkboxSelected:(id)sender
+{
+    if([sender isKindOfClass:[BSCheckBox class]] )
+    {
+        BSCheckBox *checkBox = (BSCheckBox *)sender;
+        if(checkBox.checked == NO)
+        {
+            checkBox.checked = YES;
+            [checkBox setImage:[UIImage imageNamed:@"checkbox-checked.png"] forState:UIControlStateNormal];
+        }
+        else{
+            checkBox.checked = NO;
+            [checkBox setImage:[UIImage imageNamed:@"checkbox-unchecked.png"] forState:UIControlStateNormal];
+        }
+        [SVProgressHUD showErrorWithStatus:@"Checkbox changed"];
+        
+    }
+}
+
 
 @end
